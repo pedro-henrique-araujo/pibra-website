@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+
+.page-wrapper {
+    max-width: calc(100% - 300px);
+    margin: auto;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -56,4 +62,25 @@ nav ul li a {
     border: none;
     border-radius: 15px;
     height: 30px;
+}
+
+.church-photo-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.church-photo-container p{
+    font-size: 40px;
+    font-weight: 400;
+    flex:4; 
+}
+
+.church-photo {
+    content: url("./church-photo.png");
+    border: 1px solid #ddd;
+    flex:8;
+    border-radius: 30px;
 }
