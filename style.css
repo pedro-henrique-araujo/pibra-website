@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.page-wrapper {
+    max-width: calc(100% - 300px);
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.logo {
+    background: #E9E9E9;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    color: #F5F5F5;
+    flex-shrink: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.search-input {
+    background: #D9D9D9;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.church-photo-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.church-photo-container p{
+    font-size: 40px;
+    font-weight: 400;
+    flex:4; 
+}
+
+.church-photo {
+    content: url("./church-photo.png");
+    border: 1px solid #ddd;
+    flex:8;
+    border-radius: 30px;
+}
