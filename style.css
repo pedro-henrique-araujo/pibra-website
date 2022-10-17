@@ -5,19 +5,26 @@
     box-sizing: border-box;
 }
 
-
-.page-wrapper {
-    max-width: calc(100% - 300px);
-    margin: auto;
+body {
+    margin:0;
+    padding: 0;
 }
 
-header {
+nav, article {
+    width: calc(100% - 70px);
+    max-width: 1024px;
+    margin:auto;
+}
+
+article {
+    margin-top: 40px;
+}
+
+nav {
     display: flex;
     align-items: center;
-    align-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 30px 20px;
+    justify-content: space-between;
+    padding: 30px 0;
 }
 
 .logo {
@@ -29,14 +36,14 @@ header {
     flex-shrink: 0;
 }
 
+.burger-icon {
+    display: none;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-nav {
-    width: 100%;
 }
 
 nav ul {
@@ -65,7 +72,6 @@ nav ul li a {
 }
 
 .church-photo-container {
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -75,12 +81,44 @@ nav ul li a {
 .church-photo-container p{
     font-size: 40px;
     font-weight: 400;
-    flex:4; 
 }
 
 .church-photo {
     content: url("./church-photo.png");
     border: 1px solid #ddd;
-    flex:8;
     border-radius: 30px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .logo {
+        display:none;
+    }
+    
+    .burger-icon {
+        display: block;
+    }
+
+    .church-photo-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    article {
+        margin-top: 10px;
+    }
+
+    .church-photo-container p{
+        font-size: 20px;
+    }   
+    
+    nav, article {
+        width: calc(100% - 30px);
+    }
 }
