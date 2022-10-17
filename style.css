@@ -5,15 +5,44 @@
     box-sizing: border-box;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
+.font-semi-bold {
+    font-weight: 600;
+}
+
+.font-extra-bold {
+    font-weight: 800;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.background-gray {
+    background: #D9D9D9
+}
+
 body {
     margin:0;
     padding: 0;
 }
 
-nav, article {
+nav, section {
     width: calc(100% - 70px);
     max-width: 1024px;
     margin:auto;
+    overflow: auto;
+}
+
+section {
+    padding: 80px 0px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 article {
@@ -73,6 +102,7 @@ nav ul li a {
 
 .church-photo-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 30px 20px;
@@ -88,6 +118,31 @@ nav ul li a {
     border: 1px solid #ddd;
     border-radius: 30px;
     max-width: 100%;
+}
+
+.confession-button-and-img {
+    display: flex;
+    height: 300px;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.confession-button-and-img button {
+    width: 267px;
+    height: 71px;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: #A1A1A1;
+    color: white;
+}
+
+.confession-button-and-img button:hover {
+    background: #9b9b9b;
 }
 
 @media screen and (max-width: 1023px) {
@@ -107,6 +162,17 @@ nav ul li a {
     nav ul {
         display: none;
     }
+
+    .confession-button-and-img button {
+        font-size: 18px;
+        width: 175px;
+        height: 46.54px;
+    }
+
+    .confession-button-and-img img {
+        width: 92px;
+        height: 120px;
+    }
 }
 
 @media screen and (max-width: 423px) {
@@ -118,7 +184,11 @@ nav ul li a {
         font-size: 20px;
     }   
     
-    nav, article {
+    nav, section {
         width: calc(100% - 30px);
+    }
+
+    .confession-button-and-img {
+        flex-direction: column;
     }
 }
