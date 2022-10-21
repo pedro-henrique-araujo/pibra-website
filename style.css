@@ -38,15 +38,14 @@ nav, section {
 }
 
 section {
-    padding: 80px 0px;
-    min-height: 800px;
+    padding: 80px 0px;    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-article {
-    margin-top: 40px;
+main section {
+    min-height: 900px;
 }
 
 nav {
@@ -61,7 +60,6 @@ nav {
     border-radius: 50%;
     width: 66px;
     height: 66px;
-    color: #F5F5F5;
     flex-shrink: 0;
 }
 
@@ -145,9 +143,133 @@ nav ul li a {
     background: #9b9b9b;
 }
 
+.meeting-days-cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.meeting-day-card p:first-child {
+    color:black;
+    font-size: 23px;
+    font-weight: 700;
+    width: 270px;
+    height: 50px;
+    border: 3px black solid;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 47px;
+}
+
+.meeting-day-card p:nth-child(2), .meeting-day-card p:nth-child(3) {
+    color:#6C6C6C;
+    font-size: 23px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+}
+
+.meeting-day-card p:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.yt-text-and-img {
+    margin-top:80px;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0px 30px;
+}
+
+.yt-text-and-img div { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yt-text-and-img p {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: left;
+    width:395px;
+}
+
+.map-container {
+    overflow: visible;
+}
+
+.map-container p {
+    color:#6C6C6C;
+}
+
+.map {
+    height: 390px;
+    width: 100%;
+    background: url('./map.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius:40px;
+    box-shadow: 5px 5px 78px 13px rgba(0, 0, 0, 0.25);
+}
+
+.project-cards {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.project-cards > div {
+    width: 180px;
+    height: 190px;
+    background: #D9D9D9;
+    border-radius: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    color: #6C6C6C;
+    text-transform: uppercase;
+}
+
+footer {
+    box-shadow: inset 0px 12px 46px rgba(0, 0, 0, 0.25);
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+}
+
+footer section div:not(.logo){
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logo {    
+    background: #A1A1A1;
+    width: 160px;
+    height: 160px;
+}
+
+footer a {
+    color: #6C6C6C;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 1023px) {
     .logo {
         display:none;
+    }
+
+    footer .logo {
+        display: block;
     }
     
     .burger-icon {
@@ -173,6 +295,57 @@ nav ul li a {
         width: 92px;
         height: 120px;
     }
+
+    .meeting-days-cards-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .meeting-day-card p:first-child {
+        margin-bottom:5px;
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .meeting-day-card p:nth-child(2), .meeting-day-card p:nth-child(3) {
+        font-size: 18px;
+    }
+
+    .yt-text-and-img p{
+        font-size: 22px;
+    }
+
+    .yt-text-and-img img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .yt-text-and-img p{
+        font-size: 15px;
+    }
+
+    .yt-text-and-img img {
+        width: 200px;
+    }
+
+    .project-cards > div {
+        width: 155px;
+        height: 165px;
+        border-radius:30px;
+    }
+
+    footer .logo {
+       margin-bottom: 100px;
+    }
+
+    footer section {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 423px) {
@@ -190,5 +363,14 @@ nav ul li a {
 
     .confession-button-and-img {
         flex-direction: column;
+    }
+
+    .yt-text-and-img {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .yt-text-and-img p {
+        max-width: 100%;
     }
 }
