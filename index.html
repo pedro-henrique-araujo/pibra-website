@@ -4,51 +4,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet" />
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/272690feaf.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Primeira Igreja Batista de Aquiraz</title>
 </head>
-<body>
-  <nav>
-    <div class="logo">
-      <img src="logo.svg" alt="logo da igreja">
-    </div>
-    <div class="burger-icon">
-      <img src="burger-icon.svg" alt="">
-    </div>
-    <div>
-      <ul>
-        <li>
-          <a>Nossa</a>
-          <a>História</a>
-        </li>
-        <li>
-          <a href="#confession">Confissão</a>
-          <a href="#confession">de Fé</a>
-        </li>
-        <li>
-          <a href="#meetings">Cultos</a>
-        </li>
-        <li>
-          <a href="#address">Endereço</a>
-        </li>
-        <li>
-          <a href="#projects">Projetos</a>
-        </li>
-        <li>
-          <a href="https://itsemear.com" target="_blank">Seminário</a>
-          <a href="https://itsemear.com" target="_blank">Teológico</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <input class="search-input" />
-    </div>
-  </nav>
+<body> 
+  <aside class="menu">
+    <nav>
+      <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+      </div>
+      
+      <div>
+        <img src="./assets/img/logo.svg" class="logo-menu"  alt="logo da igreja">
+      </div>
+      
+      <div>
+
+        <ul>
+          <div class="close-menu">
+            <i class="fa-solid fa-chevron-left" onclick="menuShow()"></i>
+          </div>          
+
+          <li onclick="menuShow()">
+            <img src="./assets/img/logo.svg" class="logo-menu-mobile"  alt="logo da igreja">
+          </li>
+
+          <li>
+            <a>Nossa História</a>
+          </li>
+          <li onclick="menuShow()">
+            <a href="#confession">Confissão de Fé</a>
+            <!-- <a href="#confession">de Fé</a> -->
+          </li>
+          <li onclick="menuShow()">
+            <a href="#meetings">Cultos</a>
+          </li>
+          <li onclick="menuShow()">
+            <a href="#address">Endereço</a>
+          </li>
+          <li onclick="menuShow()">
+            <a href="#projects">Projetos</a>
+          </li>
+          <li onclick="menuShow()">
+            <a href="https://itsemear.com" target="_blank">Seminário Teológico</a>
+            <!-- <a href="https://itsemear.com" target="_blank">Teológico</a> -->
+          </li>
+        </ul>
+      </div>
+      <div>
+        <input class="search-input" />
+      </div>    
+    </nav>
+  </aside>
+  
 
   <main>
     <article>
       <section class="church-photo-container">
-        <p>"Texto sobre texto texto sobre um texto e mais texto</p>
+        <div class="text-verse-complete">
+          <q>...Pregamos a Cristo, poder de Deus e sabedoria de Deus.</q>
+          <p class="verse-text"> 1 Coríntios 1.24b</p>
+        </div>
         <div class="church-photo"></div>
       </section>
     </article>
@@ -62,7 +81,7 @@
             Baixe Aqui
           </button> -->
           <div class="image">
-            <img src="confissoes.svg" alt="Confissão de fé">
+            <img src="./assets/img/confissoes.svg" alt="Confissão de fé">
           </div>
         </div>
       </section>
@@ -93,7 +112,7 @@
             Todos os cultos dominicais transmitidos no nosso canal oficial do <strong>Youtube.</strong>
           </p>
           <div>
-            <img src="./yt-photo.png" />
+            <img src="./assets/img/yt-photo.png" />
 
           </div>
         </div>
@@ -129,7 +148,7 @@
   <footer>
     <section>
       <div class="logo">
-        <img src="logo.svg" alt="logo da igreja">
+        <img src="./assets/img/logo.svg" alt="logo da igreja">
       </div>
       <div>
         <a>Sobre Nós</a>
@@ -144,6 +163,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
 
