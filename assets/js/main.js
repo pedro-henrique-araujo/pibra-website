@@ -1,6 +1,6 @@
-var ul = document.querySelector('nav ul');
-var menuBtn = document.querySelector('.menu-btn i');
-var closeMenu = document.querySelector('.close-menu i');
+let ul = document.querySelector('nav ul');
+let menuBtn = document.querySelector('.menu-btn i');
+let closeMenu = document.querySelector('.close-menu i');
 
 function menuShow() {
     if (ul.classList.contains('open')) {
