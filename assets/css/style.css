@@ -147,15 +147,17 @@ nav ul li a {
 
 .church-photo-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: unset;
     justify-content: space-around;
     align-items: center;
     padding: 30px 10px;
+    flex-wrap: nowrap;
 }
 
 .church-photo-container q {
     font-size: 40px;
     font-weight: 400;
+    max-width: 100%;
 }
 
 .church-photo-container p {
@@ -170,9 +172,9 @@ nav ul li a {
 
 .church-photo {
     content: url("../img/church-initial.jpg");
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    max-width: 100%;
+    /* border: 1px solid #ddd; */
+    border-radius: 30px 0px 0px 30px;
+    max-width: 75%;
     display: flex;
 }
 
@@ -351,6 +353,9 @@ nav .menu-btn i{
     transition-duration: 1s;
 }
 
+.logo-menu-mobile {
+    display: none;
+}
 
 @media screen and (max-width: 1023px) {
     
@@ -363,11 +368,20 @@ nav .menu-btn i{
     }
 
     .church-photo-container {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         padding: 200px 20px;
         margin-top: -200px;
         margin-bottom: -100px;
+    }
+
+    .church-photo {
+        display: flex;
+        /* border: 1px solid #ddd; */
+        border-radius: 0px 0px 0px 0px;
+        max-width: 100%;
+        transition: .5s;
+        transition-duration: .3s;
     }
 
     nav ul {
@@ -381,7 +395,7 @@ nav .menu-btn i{
 
     nav ul {
         position: fixed;
-        top: 0px;
+        top: -10px;
         bottom: 100%;
         left: -100%;
         background-color: #ffffff;
@@ -412,12 +426,12 @@ nav .menu-btn i{
         margin-left: 0.5rem;
     }
 
-    .close-menu i {
-        width: 50px;
+    .logo-menu-mobile {
+        display: revert;
     }
 
-    .logo-menu-mobile {
-        
+    .close-menu i {
+        width: 50px;
     }
 
     .church-photo-container q {
