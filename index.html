@@ -20,55 +20,59 @@
       <div>
         <img src="./assets/img/logo.svg" class="logo-menu"  alt="logo da igreja">
       </div>
-      
-      <div>
+      <ul>
+        <div class="close-menu">
+          <i class="fa-solid fa-chevron-left" onclick="menuShow()"></i>
+        </div>          
 
-        <ul>
-          <div class="close-menu">
-            <i class="fa-solid fa-chevron-left" onclick="menuShow()"></i>
-          </div>          
+        <li onclick="menuShow()">
+          <img src="./assets/img/logo.svg" class="logo-menu-mobile"  alt="logo da igreja">
+        </li>
 
-          <li onclick="menuShow()">
-            <img src="./assets/img/logo.svg" class="logo-menu-mobile"  alt="logo da igreja">
-          </li>
-
-          <li>
-            <a>Nossa História</a>
-          </li>
-          <li onclick="menuShow()">
-            <a href="#confession">Confissão de Fé</a>
-            <!-- <a href="#confession">de Fé</a> -->
-          </li>
-          <li onclick="menuShow()">
-            <a href="#meetings">Cultos</a>
-          </li>
-          <li onclick="menuShow()">
-            <a href="#address">Endereço</a>
-          </li>
-          <li onclick="menuShow()">
-            <a href="#projects">Projetos</a>
-          </li>
-          <li onclick="menuShow()">
-            <a href="https://itsemear.com" target="_blank">Seminário Teológico</a>
-            <!-- <a href="https://itsemear.com" target="_blank">Teológico</a> -->
-          </li>
-        </ul>
-      </div>
-      <div>
-        <input class="search-input" />
-      </div>    
+        <li>
+          <a>Nossa História</a>
+        </li>
+        <li onclick="menuShow()">
+          <a href="#confession">Confissão de Fé</a>
+          <!-- <a href="#confession">de Fé</a> -->
+        </li>
+        <li onclick="menuShow()">
+          <a href="#meetings">Cultos</a>
+        </li>
+        <li onclick="menuShow()">
+          <a href="#address">Endereço</a>
+        </li>
+        <li onclick="menuShow()">
+          <a href="#projects">Projetos</a>
+        </li>
+        <li onclick="menuShow()">
+          <a href="https://itsemear.com" target="_blank">Seminário Teológico</a>
+          <!-- <a href="https://itsemear.com" target="_blank">Teológico</a> -->
+        </li>
+      </ul> 
     </nav>
-  </aside>  
+  </aside>
 
   <main>
     <article>
-      <section class="church-photo-container">
-        <div class="text-verse-complete">
-          <q>...Pregamos a Cristo, poder de Deus e sabedoria de Deus.</q>
+      <div class="church-photo">
+        <div class="church-photo-verse">
+          <q>
+            Cristo é o</br>
+            <span class="quote-highlight">poder</span> de<br/>
+            Deus e a<br/>
+            <span class="quote-highlight">sabedoria</span><br/>
+            de Deus.</br>
+          </q>
+          <span class="reference-verse">1 Coríntios 1.24</span>
+        </div>
+      </div>
+      <!-- <section class="church-photo-container">
+        <q>...Pregamos a Cristo, poder de Deus e sabedoria de Deus.</q>
           <p class="verse-text"> 1 Coríntios 1.24b</p>
         </div>
-        <div class="church-photo"></div>
-      </section>
+          
+      </section> -->
     </article>
 
     <article id="confession" class="font-semi-bold text-center background-red">

@@ -64,7 +64,7 @@ body {
     padding: 0;
 }
 
-nav,
+
 section {
     width: calc(100% - 70px);
     max-width: 1024px;
@@ -83,11 +83,16 @@ main section {
     min-height: 900px;
 }
 
+aside {
+   position: absolute;
+   width: 100%;
+}
+
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
+    padding: 30px 10%;
+    z-index: 0 !important;
 }
 
 /* nav .menu-btn i{
@@ -119,9 +124,8 @@ li {
 }
 
 nav ul {
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
 }
 
 nav ul li {
@@ -135,7 +139,7 @@ nav ul li a {
     text-transform: uppercase;
     padding: 10px;
     width: 20px;
-    color: black;
+    color: #647680;
 }
 
 .search-input {
@@ -171,11 +175,46 @@ nav ul li a {
 }
 
 .church-photo {
-    content: url("../img/church-initial.jpg");
-    /* border: 1px solid #ddd; */
-    border-radius: 30px 0px 0px 30px;
-    max-width: 75%;
+    background: linear-gradient(64.38deg, #FFFFFF 7.17%, rgba(255, 255, 255, 0) 73.92%), linear-gradient(128.15deg, #FFFFFF 23.09%, rgba(255, 255, 255, 0) 83.71%), url('../img/church-initial.svg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    width: 100%;
+    height: 1000px;
     display: flex;
+    text-transform: uppercase;
+    color: #506874;
+}
+
+.church-photo-verse {
+    left: 10%;
+    top: 200px;
+    position: relative;
+}
+
+.church-photo q {
+    quotes: none;
+    font-weight: 700;
+    font-size: 68px;    
+    line-height: 95px;
+    z-index: 1 !important;
+}
+
+.church-photo q .quote-highlight {
+    background: linear-gradient(91.5deg, #EF616F 0.7%, #F47E7A 49.43%, #ED424B 99.18%);
+    padding: 0px 15px;
+    color: white;
+    margin: 0px -15px;
+}
+
+.church-photo .reference-verse {
+    font-weight: 600;
+    font-size: 29px;
+}
+
+.church-photo-white-gradient {
+    background: white;
+    width: 50%;
 }
 
 .confession-button-and-img {
@@ -489,6 +528,19 @@ nav .menu-btn i{
 
     .yt-text-and-img img {
         width: 200px;
+    }   
+
+    .church-photo q {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .church-photo q .quote-highlight {
+        margin: 0px -10px;
+    }
+    
+    .church-photo .reference-verse {
+        font-size: 15px;
     }
 
     .project-cards>div {
@@ -515,6 +567,23 @@ nav .menu-btn i{
 
     .church-photo-container p {
         font-size: 20px;
+    }
+
+    .church-photo q {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .church-photo {
+        height: 700px
+    }
+
+    .church-photo q .quote-highlight {
+        margin: 0px -5px;
+    }
+    
+    .church-photo .reference-verse {
+        font-size: 15px;
     }
 
     nav,
