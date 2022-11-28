@@ -260,7 +260,7 @@ nav ul li a {
 }
 
 .image {
-    transform: translate(30%, 8%);
+    transform: translate(-10%, -50%);
 }
 
 
@@ -534,4 +534,13 @@ nav .menu-btn i{
     .yt-text-and-img p {
         max-width: 100%;
     }
+}
+
+.confession{
+    position: relative;
+}
+
+.tulip{
+    position: absolute;
+
 }
