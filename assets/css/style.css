@@ -20,8 +20,9 @@ h2 {
 }
 
 .title-4 {
-    font-size: 36px;
-    color: #DFAF69;
+    font-size: 46px;
+    color: #4C6774;
+    ;
 }
 .p-1 {
     font-size: 20px;
@@ -50,8 +51,7 @@ h2 {
 }
 
 .background-gray {
-    background: rgb(85, 95, 102);
-    background: linear-gradient(90deg, rgba(85, 95, 102, 1) 0%, rgba(114, 126, 135, 1) 49%, rgba(94, 107, 117, 1) 100%);
+    background: linear-gradient(180deg, #D6D5D3 0%, #F3F1F2 52.08%, #D6D5D3 96.35%);
 }
 
 .background-red {
@@ -342,6 +342,16 @@ nav ul li a {
     width: 400px;
 }
 
+.tulip{
+    top: 29.7%;
+    position: absolute;
+}
+
+.tulip img {
+    position: relative;
+    top: 20vh;
+}
+
 .map-container {
     overflow: visible;
     margin-bottom: 0px;
@@ -390,6 +400,7 @@ nav ul li a {
 }
 
 footer {
+    background: linear-gradient(88deg, #F15465 0%, #F47A77 38.54%, #EE333C 89.06%);
     box-shadow: inset 0px 12px 46px rgba(0, 0, 0, 0.25);
 }
 
@@ -410,7 +421,7 @@ footer .logo {
 }
 
 footer a {
-    color: #6C6C6C;
+    color: #ffffff;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
@@ -653,11 +664,3 @@ nav .menu-btn i{
     }
 }
 
-.confession{
-    position: relative;
-}
-
-.tulip{
-    position: absolute;
-
-}
