@@ -20,17 +20,14 @@
       <div>
         <img src="./assets/img/logo.svg" class="logo-menu"  alt="logo da igreja">
       </div>
-      
-      <div>
+      <ul>
+        <div class="close-menu">
+          <i class="fa-solid fa-chevron-left" onclick="menuShow()"></i>
+        </div>          
 
-        <ul>
-          <div class="close-menu">
-            <i class="fa-solid fa-chevron-left" onclick="menuShow()"></i>
-          </div>          
-
-          <li onclick="menuShow()">
-            <img src="./assets/img/logo.svg" class="logo-menu-mobile"  alt="logo da igreja">
-          </li>
+        <li onclick="menuShow()">
+          <img src="./assets/img/logo.svg" class="logo-menu-mobile"  alt="logo da igreja">
+        </li>
 
           <li>
             <a>Nossa História</a>
@@ -56,25 +53,44 @@
       </div>
       <div>
         <input class="search-input" />
-      </div>
+      </div>    
     </nav>
   </aside>
 
   <main>
     <article>
-      <section class="church-photo-container">
-        <div class="text-verse-complete">
-          <q>...Pregamos a Cristo, poder de Deus e sabedoria de Deus.</q>
+      <div class="church-photo">
+        <div class="church-photo-verse">
+          <q>
+            Cristo é o</br>
+            <span class="quote-highlight">poder</span> de<br/>
+            Deus e a<br/>
+            <span class="quote-highlight">sabedoria</span><br/>
+            de Deus.</br>
+          </q>
+          <span class="reference-verse">1 Coríntios 1.24</span>
+        </div>
+      </div>
+      <!-- <section class="church-photo-container">
+        <q>...Pregamos a Cristo, poder de Deus e sabedoria de Deus.</q>
           <p class="verse-text"> 1 Coríntios 1.24b</p>
         </div>
-        <div class="church-photo"></div>
-      </section>
+          
+      </section> -->
     </article>
 
     <article id="confession" class="font-semi-bold text-center background-red confession">
       <section>
         <h2 class="title-1">Confissão de Fé</h2>
         <p class="p-1">Introdução da Confissão de fé da Primeira Igreja Batista de Aquiraz Introdução da Confissão de fé da Primeira Igreja Batista de Aquiraz Introdução da Confissão de fé da Primeira Igreja Batista </br> Primeira Igreja Batista de Aquiraz <span class="font-extra-bold">Faça o download da nossa Confissão em PDF</span></p>
+        <div class="confession-button-and-img">
+          <!-- <button>
+            Baixe Aqui
+          </button> -->
+          <div class="image">
+            <img src="./assets/img/confissoes.svg" alt="Confissão de fé">
+          </div>
+        </div>
       </section>
       <div class="image tulip">
         <img src="./assets/img/flower.svg" alt="tulipa">
@@ -88,17 +104,17 @@
           <div class="meeting-day-card">
             <p>Culto de Oração</p>
             <p>Qua</p>
-            <p>19h</p>
+            <p>19h00</p>
           </div>
           <div class="meeting-day-card">
             <p>Escola Bíblica</p>
             <p>Sáb</p>
-            <p>18h</p>
+            <p>18h00</p>
           </div>
           <div class="meeting-day-card">
             <p>Culto Dominical</p>
             <p>Dom</p>
-            <p>18h</p>
+            <p>18h00</p>
           </div>
         </div>
         <div class="yt-text-and-img">
@@ -107,6 +123,7 @@
           </p>
           <div>
             <img src="./assets/img/yt-photo.png" />
+
           </div>
         </div>
       </section>
@@ -117,6 +134,7 @@
         <h2 class="title-3">Nosso Endereço</h2>
         <p>Rua em determinado Lugar, 203 Barro tal - Aquiraz - CE</p>
         <div class="map">
+          
         </div>
       </section>
     </article>
