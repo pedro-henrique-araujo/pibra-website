@@ -334,8 +334,8 @@ nav ul li a {
 
 #confession .image {
    position: absolute;
-   left: 50%;
-   top: 60%;
+   right: calc(50% + -400px);
+   top: calc(50% + 100px);
 }
 
 .image img {
@@ -537,8 +537,12 @@ nav .menu-btn i{
     }
 
     .confession-button-and-img img {
-        width: 92px;
-        height: 120px;
+        width:300px;
+    }
+
+    #confession .image {
+        right: calc(50% - 300px);
+        top: calc(50% + 200px)
     }
 
     .meeting-days-cards-container {
@@ -591,6 +595,15 @@ nav .menu-btn i{
         font-size: 15px;
     }
 
+    .confession-button-and-img img {
+        width:300px;
+    }
+
+    #confession .image {
+        right: calc(50% + -250px);
+        top: calc(50% + 200px);
+    }
+
     .project-cards>div {
         width: 155px;
         height: 165px;
@@ -641,6 +654,15 @@ nav .menu-btn i{
 
     .confession-button-and-img {
         flex-direction: column;
+    }
+
+    .confession-button-and-img img {
+        width:200px;
+    }
+
+    #confession .image {
+        right: calc(50% + -150px);
+        top: calc(50% + 350px);
     }
 
     .yt-text-and-img {
