@@ -315,6 +315,15 @@ nav ul li a {
     font-weight: 800;
 }
 
+.yt-text-and-img p a {    
+    color: #536F79;
+    text-decoration: none;
+}
+
+.yt-text-and-img p a:hover {  
+    text-decoration: underline;
+}
+
 #confession {
     background: linear-gradient(95.72deg, #F16274 1.95%, #F4837F 47.88%, #F03C47 95.77%);
     overflow: visible;
