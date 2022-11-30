@@ -321,9 +321,14 @@ nav ul li a {
     position: relative;
 }
 
+#confession section{
+    justify-content: start;
+}
+
 #confession h2 {
     font-weight: 800;
-    font-size: 46px;    
+    font-size: 46px;
+    margin-bottom:100px;
 }
 
 #confession p {
@@ -333,22 +338,19 @@ nav ul li a {
 
 #confession .image {
    position: absolute;
-   right: calc(50% + -400px);
-   top: calc(50% + 100px);
+   top: 100%;
+   left: 50%;
+   translate: 0 calc(-100% + 50px);
 }
 
-.image img {
+#confession .image img {
     width: 400px;
 }
 
-.tulip{
-    top: 29.7%;
+.tulip {
+    top: 100%;
     position: absolute;
-}
-
-.tulip img {
-    position: relative;
-    top: 20vh;
+    translate: 0 calc(-100% + 4px);
 }
 
 .map-container {
@@ -505,7 +507,7 @@ nav .menu-btn i{
         margin-top: 0.5rem;
     }
     
-    nav .menu-btn i{
+    nav .menu-btn i {
         display: flex;
     }
 
@@ -545,14 +547,13 @@ nav .menu-btn i{
         width: 175px;
         height: 46.54px;
     }
-
-    .confession-button-and-img img {
-        width:300px;
+    
+    #confession .image img {
+        width: 250px;
     }
 
-    #confession .image {
-        right: calc(50% - 300px);
-        top: calc(50% + 200px)
+    #confession .tulip img {
+        width: 250px;
     }
 
     .meeting-days-cards-container {
@@ -609,9 +610,12 @@ nav .menu-btn i{
         width:300px;
     }
 
-    #confession .image {
-        right: calc(50% + -250px);
-        top: calc(50% + 200px);
+    #confession .image img {
+        width: 210px;
+    }
+
+    #confession .tulip img {
+        width: 150px;
     }
 
     .project-cards>div {
@@ -631,11 +635,7 @@ nav .menu-btn i{
     }
 }
 
-@media screen and (max-width: 423px) {
-    article {
-        margin-top: 10px;
-    }
-
+@media screen and (max-width: 424px) {
     .church-photo-container p {
         font-size: 20px;
     }
@@ -670,9 +670,12 @@ nav .menu-btn i{
         width:200px;
     }
 
-    #confession .image {
-        right: calc(50% + -150px);
-        top: calc(50% + 350px);
+    #confession .image img {
+        width: 150px;
+    }
+
+    #confession .tulip img {
+        width: 100px;
     }
 
     .yt-text-and-img {
