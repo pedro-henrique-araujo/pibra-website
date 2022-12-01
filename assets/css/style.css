@@ -383,7 +383,7 @@ nav ul li a {
 .map {
     height: 380px;
     width: 100%;
-    background: url('../img/map.png');
+    /* background: url('../img/map.png'); */
     background-size: cover;
     background-position: 50% 50%;
     border-radius: 40px;
