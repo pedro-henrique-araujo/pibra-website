@@ -34,3 +34,7 @@ button.copied {
     background: rgb(35, 141, 35);
     color: white;
 }
+
+#qr-code {
+    cursor: pointer;
+}
