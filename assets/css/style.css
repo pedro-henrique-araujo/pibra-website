@@ -181,7 +181,7 @@ nav ul li a {
 }
 
 .church-photo {
-    background: linear-gradient(64.38deg, #FFFFFF 7.17%, rgba(255, 255, 255, 0) 73.92%), linear-gradient(128.15deg, #FFFFFF 23.09%, rgba(255, 255, 255, 0) 83.71%), url('../img/church-initial.svg');
+    background: linear-gradient(64.38deg, #FFFFFF 7.17%, rgba(255, 255, 255, 0) 73.92%), linear-gradient(128.15deg, #FFFFFF 23.09%, rgba(255, 255, 255, 0) 83.71%), url('../img/church-initial.png');
     background-size: cover ;
     background-repeat: no-repeat;
     background-position: 75% 50%;
