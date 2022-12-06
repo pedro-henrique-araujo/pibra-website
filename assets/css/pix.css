@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+main button {
+    margin: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    width: 150px;
+}
+
+button.copied {
+    background: rgb(35, 141, 35);
+    color: white;
+}
