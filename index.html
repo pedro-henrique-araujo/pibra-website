@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./assets/css/style.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/272690feaf.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/api-youtube.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Primeira Igreja Batista de Aquiraz</title>
 </head>
 
-<body>
+<body onload=" getVideos() ">
   <aside class="menu">
     <nav>
       <div class="menu-btn">
@@ -114,7 +116,7 @@
               <strong>Youtube.</strong>
             </a>
           </p>
-          <div>
+          <div class="youtube-container">
             <a href="https://www.youtube.com/@PrimeiraIgrejaBatistadeAquiraz" target="_blank">
               <img src="./assets/img/yt-photo.png" />
             </a>
@@ -174,7 +176,6 @@
     </section>
   </footer>
 
-  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
