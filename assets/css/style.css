@@ -324,6 +324,37 @@ nav ul li a {
     text-decoration: underline;
 }
 
+.yt-text-and-img #yt-videos a {
+    text-decoration: none;
+}
+
+.yt-text-and-img #yt-videos .video-link {
+    background: url('../img/yt-link-background.svg');
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 203px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yt-text-and-img #yt-videos .video-link img {
+    margin-top:48px;
+}
+
+.yt-text-and-img #yt-videos .video-link #video-title {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin-top:28.8px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 #confession {
     background: linear-gradient(95.72deg, #F16274 1.95%, #F4837F 47.88%, #F03C47 95.77%);
     overflow: visible;
