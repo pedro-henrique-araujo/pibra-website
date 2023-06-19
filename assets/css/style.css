@@ -331,6 +331,7 @@ nav ul li a {
 .yt-text-and-img #yt-videos .video-link {
     background: url('../img/yt-link-background.svg');
     background-repeat: no-repeat;
+    background-position: 50%;
     width: 308px;
     height: 203px;
     overflow: hidden;
@@ -338,10 +339,13 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 10%;
 }
 
 .yt-text-and-img #yt-videos .video-link img {
     margin-top:48px;
+    height: 46.2;
+    width: 66;
 }
 
 .yt-text-and-img #yt-videos .video-link #video-title {
@@ -663,7 +667,7 @@ nav .menu-btn i{
         font-size: 22px;
     }
 
-    .yt-text-and-img img {
+    .yt-text-and-img #yt-videos .video-link {
         width: 300px;
     }
 
@@ -688,7 +692,7 @@ nav .menu-btn i{
         font-size: 15px;
     }
 
-    .yt-text-and-img img {
+    .yt-text-and-img #yt-videos .video-link {
         width: 200px;
     }   
 

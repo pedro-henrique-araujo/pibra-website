@@ -1,6 +1,4 @@
-let ul = document.querySelector('nav ul');
-let menuBtn = document.querySelector('.menu-btn i');
-let closeMenu = document.querySelector('.close-menu i');
+const ul = document.querySelector('nav ul');
 
 function menuShow() {
     if (ul.classList.contains('open')) {
@@ -10,3 +8,7 @@ function menuShow() {
         ul.classList.add('open');
     }
 }
+
+document.onload = () => {
+    console.log('hello world');
+};
