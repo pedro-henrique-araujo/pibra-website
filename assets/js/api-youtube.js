@@ -1,25 +1,22 @@
 let getVideos = () => {
+  fetch(
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJLmKDAon_vCx-TolnZpmNw&maxResults=1&order=date&key=AIzaSyASgb3r_kT1K5U6ndtlPPT68_J8DLOnQTQ"
+  )
+    .then((result) => {
+      return result.json();
+    })
+    .then((data) => {
+      const firstVideo = data.items[0];
+      const { videoId } = firstVideo?.id;
 
-    //Comentado pois excedeu limite de quotas, então foi criado um novo serviço.
-
-    // fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJLmKDAon_vCx-TolnZpmNw&maxResults=3&order=date&key=AIzaSyDspjMVFigKNnGt4uvCeBmkW3vFmKzZnUo')
-
-    fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJLmKDAon_vCx-TolnZpmNw&maxResults=3&order=date&key=AIzaSyASgb3r_kT1K5U6ndtlPPT68_J8DLOnQTQ')
-    .then( (result) => {
-        return result.json();
-    } )
-    .then( (data) => {
-        let videos = data.items;
-        let videoContainer = document.querySelector('.thumbnail-youtube')
-
-        console.log(data)
-
-        for( let video of videos ) {
-            /*videoContainer.innerHTML += `
-                <h3>${video.snippet.title}</h3>
-                <img src = "${video.snippet.thumbnails.high.url}">
-            `*/
-        }
-    } );
-    console.log('API CARREGADA..')
-}
+      if (!videoId) return;
+      const ytVideoLink =
+        "https://youtube.com/watch?v=" + firstVideo.id.videoId;
+      document.querySelector("#yt-videos a").href = ytVideoLink;
+      const { title } = firstVideo?.snippet;
+      if (!title) return;
+      const brLineTitle = title.replace(/\s\|\s/g, "<br />");
+      console.log(brLineTitle);
+      document.querySelector("#yt-videos #video-title").innerHTML = brLineTitle;
+    });
+};
