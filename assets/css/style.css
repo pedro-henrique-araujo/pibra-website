@@ -331,6 +331,7 @@ nav ul li a {
 .yt-text-and-img #yt-videos .video-link {
     background: url('../img/yt-link-background.svg');
     background-repeat: no-repeat;
+    background-position: 50%;
     width: 308px;
     height: 203px;
     overflow: hidden;
@@ -338,10 +339,13 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 10%;
 }
 
 .yt-text-and-img #yt-videos .video-link img {
     margin-top:48px;
+    height: 46.2;
+    width: 66;
 }
 
 .yt-text-and-img #yt-videos .video-link #video-title {
@@ -359,6 +363,7 @@ nav ul li a {
     background: linear-gradient(95.72deg, #F16274 1.95%, #F4837F 47.88%, #F03C47 95.77%);
     overflow: visible;
     position: relative;
+    display: none;
 }
 
 #confession section {
@@ -430,7 +435,7 @@ nav ul li a {
     justify-content: center;
 }
 
-.project-cards>div {
+.project-cards div {
     background-position: center;
     background-size: cover;
     width: 385px;
@@ -455,8 +460,20 @@ nav ul li a {
     margin:0;
 }
 
+.project-cards a {
+    text-decoration: none;
+}
+
 .card-mao-amiga {
     background: url('../img/photo-mao-amiga.svg');
+}
+
+.card-aera {
+    background: url('../img/photo-aera.svg');
+}
+
+.card-aera p {
+    margin-top:35px;
 }
 
 .card-missionaries {
@@ -650,7 +667,7 @@ nav .menu-btn i{
         font-size: 22px;
     }
 
-    .yt-text-and-img img {
+    .yt-text-and-img #yt-videos .video-link {
         width: 300px;
     }
 
@@ -675,7 +692,7 @@ nav .menu-btn i{
         font-size: 15px;
     }
 
-    .yt-text-and-img img {
+    .yt-text-and-img #yt-videos .video-link {
         width: 200px;
     }   
 
