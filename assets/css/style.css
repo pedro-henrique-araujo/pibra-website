@@ -359,6 +359,7 @@ nav ul li a {
     background: linear-gradient(95.72deg, #F16274 1.95%, #F4837F 47.88%, #F03C47 95.77%);
     overflow: visible;
     position: relative;
+    display: none;
 }
 
 #confession section {
@@ -430,7 +431,7 @@ nav ul li a {
     justify-content: center;
 }
 
-.project-cards>div {
+.project-cards div {
     background-position: center;
     background-size: cover;
     width: 385px;
@@ -455,8 +456,20 @@ nav ul li a {
     margin:0;
 }
 
+.project-cards a {
+    text-decoration: none;
+}
+
 .card-mao-amiga {
     background: url('../img/photo-mao-amiga.svg');
+}
+
+.card-aera {
+    background: url('../img/photo-aera.svg');
+}
+
+.card-aera p {
+    margin-top:35px;
 }
 
 .card-missionaries {
