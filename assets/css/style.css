@@ -1,104 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
 
 * {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .title-1 {
-    font-size: 36px;
-    color: #fff;
+  font-size: 36px;
+  color: #fff;
 }
 
-.title-2, .title-3 {
-    font-size: 36px;
-    color: rgb(85, 95, 102);
+.title-2,
+.title-3 {
+  font-size: 36px;
+  color: rgb(85, 95, 102);
 }
 
 .title-4 {
-    font-size: 46px;
-    color: #4C6774;
+  font-size: 46px;
+  color: #4c6774;
 }
 .p-1 {
-    font-size: 20px;
-    color: #fff;
+  font-size: 20px;
+  color: #fff;
 }
 
 .p-2 {
-    font-size: 20px;
-    color: rgb(85, 95, 102);
+  font-size: 20px;
+  color: rgb(85, 95, 102);
 }
 
 .font-semi-bold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .font-extra-bold {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .background {
-    background: #D9D9D9
+  background: #d9d9d9;
 }
 
 .background-gray {
-    background: linear-gradient(180deg, #D6D5D3 0%, #F3F1F2 52.08%, #D6D5D3 96.35%);
+  background: linear-gradient(
+    180deg,
+    #d6d5d3 0%,
+    #f3f1f2 52.08%,
+    #d6d5d3 96.35%
+  );
 }
 
 .background-red {
-    background: rgb(214, 107, 114);
-    background: linear-gradient(90deg, rgba(214, 107, 114, 1) 0%, rgba(228, 143, 128, 1) 49%, rgba(200, 60, 57, 1) 100%);
+  background: rgb(214, 107, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 107, 114, 1) 0%,
+    rgba(228, 143, 128, 1) 49%,
+    rgba(200, 60, 57, 1) 100%
+  );
 }
 
 #meetings {
-    background: linear-gradient(90.06deg, #FFFFFF 0.04%, #FCDBD6 84.86%);
+  background: linear-gradient(90.06deg, #ffffff 0.04%, #fcdbd6 84.86%);
 }
 
 #address {
-    background: linear-gradient(0deg, rgba(45, 49, 54, 0.56), rgba(45, 49, 54, 0.56)), url("../img/background-map.png");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
+  background: linear-gradient(
+      0deg,
+      rgba(45, 49, 54, 0.56),
+      rgba(45, 49, 54, 0.56)
+    ),
+    url("../img/background-map.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 section {
-    width: calc(100% - 70px);
-    max-width: 1024px;
-    margin: auto;
-    overflow: auto;
-    padding: 80px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  width: calc(100% - 70px);
+  max-width: 1024px;
+  margin: auto;
+  overflow: auto;
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 main section {
-    min-height: 900px;
+  min-height: 900px;
 }
 
 aside {
-   position: absolute;
-   width: 100%;
-   z-index:1;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    padding: 30px 10%;
+  display: flex;
+  align-items: center;
+  padding: 30px 10%;
 }
 
 /* nav .menu-btn i{
@@ -106,697 +122,731 @@ nav {
 } */
 
 .logo {
-    border-radius: 50%;
-    flex-shrink: 0;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .bt-menu-icon {
-    display: none;
+  display: none;
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-    padding: 7px;
-    text-align: center;
+  padding: 7px;
+  text-align: center;
 }
 
 nav ul {
-    width: 90%;
-    display: flex;
+  width: 90%;
+  display: flex;
 }
 
 nav ul li {
-    text-align: center;
+  text-align: center;
 }
 
 nav ul li a {
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 10px;
-    width: 20px;
-    color: #647680;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 20px;
+  color: #647680;
+}
+
+nav .menu-btn {
+    display: none;
 }
 
 .search-input {
-    background: #D9D9D9;
-    border: none;
-    border-radius: 15px;
-    height: 30px;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
 }
 
 .church-photo-container {
-    display: flex;
-    flex-direction: unset;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px 10px;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10px;
+  flex-wrap: nowrap;
 }
 
 .church-photo-container q {
-    font-size: 40px;
-    font-weight: 400;
-    max-width: 100%;
+  font-size: 40px;
+  font-weight: 400;
+  max-width: 100%;
 }
 
 .church-photo-container p {
-    font-size: 20px;
-    font-weight: 200;
-    color: #6C6C6C;
+  font-size: 20px;
+  font-weight: 200;
+  color: #6c6c6c;
 }
 
 .text-verse-complete {
-    display: block;
+  display: block;
 }
 
 .church-photo {
-    background: linear-gradient(64.38deg, #FFFFFF 7.17%, rgba(255, 255, 255, 0) 73.92%), linear-gradient(128.15deg, #FFFFFF 23.09%, rgba(255, 255, 255, 0) 83.71%), url('../img/church-initial.png');
-    background-size: cover ;
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    text-transform: uppercase;
-    color: #506874;
-    position: relative;
+  background: linear-gradient(
+      64.38deg,
+      #ffffff 7.17%,
+      rgba(255, 255, 255, 0) 73.92%
+    ),
+    linear-gradient(128.15deg, #ffffff 23.09%, rgba(255, 255, 255, 0) 83.71%),
+    url("../img/church-initial.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  text-transform: uppercase;
+  color: #506874;
+  position: relative;
 }
 
 .church-photo-verse {
-    left: 10%;
-    top: 200px;
-    position: relative;
+  left: 10%;
+  top: 200px;
+  position: relative;
 }
 
 .church-photo q {
-    quotes: none;
-    font-weight: 700;
-    font-size: 68px;
-    line-height: 95px;
+  quotes: none;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 95px;
 }
 
 .church-photo q .quote-highlight {
-    background: linear-gradient(91.5deg, #EF616F 0.7%, #F47E7A 49.43%, #ED424B 99.18%);
-    padding: 0px 15px;
-    color: white;
-    margin: 0px -15px;
+  background: linear-gradient(
+    91.5deg,
+    #ef616f 0.7%,
+    #f47e7a 49.43%,
+    #ed424b 99.18%
+  );
+  padding: 0px 15px;
+  color: white;
+  margin: 0px -15px;
 }
 
 .church-photo .reference-verse {
-    font-weight: 600;
-    font-size: 29px;
+  font-weight: 600;
+  font-size: 29px;
 }
 
 .church-photo-white-gradient {
-    background: white;
-    width: 50%;
+  background: white;
+  width: 50%;
 }
 
 .confession-button-and-img {
-    display: flex;
-    height: 300px;
-    width: 70%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
+  display: flex;
+  height: 300px;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .confession-button-and-img button {
-    width: 267px;
-    height: 71px;
-    font-weight: 700;
-    font-size: 25px;
-    cursor: pointer;
-    border: none;
-    border-radius: 30px;
-    background: #A1A1A1;
-    color: white;
+  width: 267px;
+  height: 71px;
+  font-weight: 700;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: #a1a1a1;
+  color: white;
 }
 
 .confession-button-and-img button:hover {
-    background: #9b9b9b;
+  background: #9b9b9b;
 }
 
 #meetings .title-2 {
-    font-weight: 800;
-    font-size: 46px;
+  font-weight: 800;
+  font-size: 46px;
 }
 
 .meeting-days-cards-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 .meeting-day-card p:first-child {
-    color: rgb(255, 255, 255);
-    font-size: 28px;
-    border-radius: 24px;
-    background-color: rgb(85, 95, 102);
-    background-image: linear-gradient(90deg, rgba(85, 95, 102, 1) 0%, rgba(114, 126, 135, 1) 49%, rgba(94, 107, 117, 1) 100%);
-    font-weight: 700;
-    width: 276px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 47px;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  border-radius: 24px;
+  background-color: rgb(85, 95, 102);
+  background-image: linear-gradient(
+    90deg,
+    rgba(85, 95, 102, 1) 0%,
+    rgba(114, 126, 135, 1) 49%,
+    rgba(94, 107, 117, 1) 100%
+  );
+  font-weight: 700;
+  width: 276px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 47px;
 }
 
 .meeting-day-card p:nth-child(2),
 .meeting-day-card p:nth-child(3) {
-    color: #536F79;
-    font-size: 45px;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
+  color: #536f79;
+  font-size: 45px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
 }
 
 .meeting-day-card p:nth-child(2) {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .yt-text-and-img {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px 30px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 30px;
 }
 
 .yt-text-and-img div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .yt-text-and-img p {
-    font-weight: 500;
-    font-size: 36px;
-    text-align: left;
-    width: 395px;
-    color: #536F79;
-    flex:2;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: left;
+  width: 395px;
+  color: #536f79;
+  flex: 2;
 }
 
 .yt-text-and-img p strong {
-    font-weight: 800;
+  font-weight: 800;
 }
 
-.yt-text-and-img p a {    
-    color: #536F79;
-    text-decoration: none;
+.yt-text-and-img p a {
+  color: #536f79;
+  text-decoration: none;
 }
 
-.yt-text-and-img p a:hover {  
-    text-decoration: underline;
+.yt-text-and-img p a:hover {
+  text-decoration: underline;
 }
 
 .yt-text-and-img #yt-videos a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .yt-text-and-img #yt-videos .video-link {
-    background: url('../img/yt-link-background.svg');
-    background-repeat: no-repeat;
-    background-position: 50%;
-    width: 308px;
-    height: 203px;
-    overflow: hidden;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10%;
+  background: url("../img/yt-link-background.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 308px;
+  height: 203px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10%;
+  padding: 15px;
 }
 
 .yt-text-and-img #yt-videos .video-link img {
-    margin-top:48px;
-    height: 46.2;
-    width: 66;
+  margin-top: 48px;
+  height: 46.2;
+  width: 66;
 }
 
 .yt-text-and-img #yt-videos .video-link #video-title {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    width: 100%;
-    text-align: center;
-    margin-top:28.8px;
-    text-transform: uppercase;
-    font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  margin-top: 28.8px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 #confession {
-    background: linear-gradient(95.72deg, #F16274 1.95%, #F4837F 47.88%, #F03C47 95.77%);
-    overflow: visible;
-    position: relative;
-    display: none;
+  background: linear-gradient(
+    95.72deg,
+    #f16274 1.95%,
+    #f4837f 47.88%,
+    #f03c47 95.77%
+  );
+  overflow: visible;
+  position: relative;
+  display: none;
 }
 
 #confession section {
-    justify-content: start;
+  justify-content: start;
 }
 
 #confession h2 {
-    font-weight: 800;
-    font-size: 46px;
-    margin-bottom:100px;
+  font-weight: 800;
+  font-size: 46px;
+  margin-bottom: 100px;
 }
 
 #confession p {
-    font-weight: 700;
-    font-size: 28px;
+  font-weight: 700;
+  font-size: 28px;
 }
 
 #confession .image {
-   position: absolute;
-   top: 100%;
-   left: 50%;
-   translate: 0 calc(-100% + 50px);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: 0 calc(-100% + 50px);
 }
 
 #confession .image img {
-    width: 400px;
+  width: 400px;
 }
 
 .tulip {
-    top: 100%;
-    position: absolute;
-    translate: 0 calc(-100% + 4px);
+  top: 100%;
+  position: absolute;
+  translate: 0 calc(-100% + 4px);
 }
 
 .map-container {
-    overflow: visible;
-    margin-bottom: 0px;
-    color: #FFFFFF;
+  overflow: visible;
+  margin-bottom: 0px;
+  color: #ffffff;
 }
 
 .map-container h2 {
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 46px;
-    text-shadow: 0px 0px 28px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 46px;
+  text-shadow: 0px 0px 28px rgba(0, 0, 0, 0.75);
 }
 
 .map-container p {
-    font-weight: 600;
-    font-size: 25px;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .map {
-    height: 380px;
-    width: 100%;
-    /* background: url('../img/map.png'); */
-    background-size: cover;
-    background-position: 50% 50%;
-    border-radius: 40px;
-    box-shadow: 5px 5px 78px 13px rgba(0, 0, 0, 0.25);
+  height: 380px;
+  width: 100%;
+  /* background: url('../img/map.png'); */
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 40px;
+  box-shadow: 5px 5px 78px 13px rgba(0, 0, 0, 0.25);
+}
+
+.map iframe {
+  border:none;
 }
 
 #projects section {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .project-cards {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .project-cards div {
-    background-position: center;
-    background-size: cover;
-    width: 385px;
-    height: 511px;
-    border-radius: 15px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin: 0px 9px;
+  background-position: center;
+  background-size: cover;
+  width: 385px;
+  height: 511px;
+  border-radius: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0px 9px;
 }
 
 .project-cards img {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
-.project-cards p{
-    margin:0;
+.project-cards p {
+  margin: 0;
 }
 
 .project-cards a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card-mao-amiga {
-    background: url('../img/photo-mao-amiga.svg');
+  background: url("../img/photo-mao-amiga.svg");
 }
 
 .card-aera {
-    background: url('../img/photo-aera.svg');
+  background: url("../img/photo-aera.svg");
 }
 
 .card-aera p {
-    margin-top:35px;
+  margin-top: 35px;
 }
 
 .card-missionaries {
-    background: url('../img/photo-missionaries.svg');
+  background: url("../img/photo-missionaries.svg");
 }
 
 .card-seminary {
-    background: url('../img/photo-seminary.svg');
+  background: url("../img/photo-seminary.svg");
 }
 
 footer {
-    background: linear-gradient(88deg, #F15465 0%, #F47A77 38.54%, #EE333C 89.06%);
-    box-shadow: inset 0px 12px 46px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    88deg,
+    #f15465 0%,
+    #f47a77 38.54%,
+    #ee333c 89.06%
+  );
+  box-shadow: inset 0px 12px 46px rgba(0, 0, 0, 0.25);
 }
 
 footer section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 footer section div:not(.logo) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 footer .logo {
-    transform: translate(30%, 8%);
-    width: 160px;
-    height: 160px;
+  transform: translate(30%, 8%);
+  width: 160px;
+  height: 160px;
 }
 
 footer a {
-    color: #ffffff;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 30px;
-    text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 30px;
+  text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-nav .menu-btn i{
-    color: #9b9b9b;
-    cursor: pointer;
-    display: none;
-
+nav .menu-btn {
+  cursor: pointer;
+  display: none;
 }
 
 .close-menu {
-    color:#9b9b9b   ;
-    cursor: pointer;
-    font-weight: 700;
-    position: relative;
-    display: none;
-    text-align: left; 
-    transition: all 1.5s ease;
+  color: #9b9b9b;
+  cursor: pointer;
+  font-weight: 700;
+  position: relative;
+  display: none;
+  text-align: left;
+  transition: all 1.5s ease;
 }
 
 .close-menu:hover {
-    color: black;
-    transition-duration: 1s;
+  color: black;
+  transition-duration: 1s;
 }
 
 .logo-menu-mobile {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 1023px) {
-    
-    footer .logo {
-        display: block;
-    }
+  footer .logo {
+    display: block;
+  }
 
-    .logo-menu {
-        display: none;
-    }
+  .logo-menu {
+    display: none;
+  }
 
-    .church-photo-container {
-        display: flex;
-        flex-direction: column;
-        padding: 200px 20px;
-        margin-top: -200px;
-        margin-bottom: -100px;
-    }
+  .church-photo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 20px;
+    margin-top: -200px;
+    margin-bottom: -100px;
+  }
 
-    .church-photo {
-        display: flex;
-        /* border: 1px solid #ddd; */
-        border-radius: 0px 0px 0px 0px;
-        max-width: 100%;
-        transition: .5s;
-        transition-duration: .3s;
-    }
+  .church-photo {
+    display: flex;
+    /* border: 1px solid #ddd; */
+    border-radius: 0px 0px 0px 0px;
+    max-width: 100%;
+    transition: 0.5s;
+    transition-duration: 0.3s;
+  }
 
-    nav ul {
-        display: none;
-    }
+  nav ul {
+    display: none;
+  }
 
-    
-    nav ul.open{
-        left: 0;
-    }
+  nav ul.open {
+    left: 0;
+  }
 
-    nav ul {
-        position: fixed;
-        top: -10px;
-        bottom: 100%;
-        left: -100%;
-        background-color: #ffffff;
-        justify-content: center;
-        height: 100vh;
-        width: 70%;
-        text-align: center;
-        display: block;
-        transition: all 1s ease;
-        margin-top: 0.5rem;
-    }
-    
-    nav .menu-btn i {
-        display: flex;
-    }
+  nav ul {
+    position: fixed;
+    top: -10px;
+    bottom: 100%;
+    left: -100%;
+    background-color: #ffffff;
+    justify-content: center;
+    height: 100vh;
+    width: 70%;
+    text-align: center;
+    display: block;
+    transition: all 1s ease;
+    margin-top: 0.5rem;
+  }
 
-    nav ul li {
-        width: 100%;
-        margin: 10px 0;
-    }
-    nav ul li a {
-        font-size: 15px;
-    }
+  nav .menu-btn {
+    display: flex;
+  }
 
-    .close-menu { 
-        display: block;
-        margin-top: 0.5rem;
-        margin-left: 0.5rem;
-    }
+  nav ul li {
+    width: 100%;
+    margin: 10px 0;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
 
-    .logo-menu-mobile {
-        display: revert;
-    }
+  .close-menu {
+    display: block;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
 
-    .close-menu i {
-        width: 50px;
-    }
+  .logo-menu-mobile {
+    display: revert;
+  }
 
-    .church-photo-container q {
-        font-size: 25px;
-        flex: 100px;
-    }
+  .close-menu i {
+    width: 50px;
+  }
 
-    .church-photo-container p {
-        font-size: 15px;
-    }
+  .church-photo-container q {
+    font-size: 25px;
+    flex: 100px;
+  }
 
-    .confession-button-and-img button {
-        font-size: 18px;
-        width: 175px;
-        height: 46.54px;
-    }
-    
-    #confession .image img {
-        width: 250px;
-    }
+  .church-photo-container p {
+    font-size: 15px;
+  }
 
-    #confession .tulip img {
-        width: 250px;
-    }
+  .confession-button-and-img button {
+    font-size: 18px;
+    width: 175px;
+    height: 46.54px;
+  }
 
-    .meeting-days-cards-container {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-    }
+  #confession .image img {
+    width: 250px;
+  }
 
-    .meeting-day-card p:first-child {
-        margin-bottom: 5px;
-        font-size: 18px;
-        width: 200px;
-        height: 40px;
-    }
+  #confession .tulip img {
+    width: 250px;
+  }
 
-    .meeting-day-card p:nth-child(2),
-    .meeting-day-card p:nth-child(3) {
-        font-size: 18px;
-    }
+  .meeting-days-cards-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 
-    .yt-text-and-img p {
-        font-size: 22px;
-    }
+  .meeting-day-card p:first-child {
+    margin-bottom: 5px;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+  }
 
-    .yt-text-and-img #yt-videos .video-link {
-        width: 300px;
-    }
+  .meeting-day-card p:nth-child(2),
+  .meeting-day-card p:nth-child(3) {
+    font-size: 18px;
+  }
 
-    .project-cards>div { 
-        height: 300px;
-    }
+  .yt-text-and-img p {
+    font-size: 22px;
+  }
 
-    .project-cards img {
-        margin-top: 100px;
-        margin-bottom:0;
-        width: 100px;
-        height: 100px;
-    }
+  .yt-text-and-img #yt-videos .video-link {
+    width: 300px;
+  }
 
-    .project-cards p {
-        font-size: 15px;
-    }
+  .yt-text-and-img #yt-videos .video-link #video-title {    
+    font-size: 10px;
+  }
+
+  .project-cards > div {
+    height: 300px;
+  }
+
+  .project-cards img {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .project-cards p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .yt-text-and-img p {
-        font-size: 15px;
-    }
+  .yt-text-and-img p {
+    font-size: 15px;
+  }
 
-    .yt-text-and-img #yt-videos .video-link {
-        width: 200px;
-    }   
+  .yt-text-and-img #yt-videos .video-link {
+    width: 200px;
+  }
 
-    .church-photo q {
-        font-size: 40px;
-        line-height: 60px;
-    }
+  .church-photo q {
+    font-size: 40px;
+    line-height: 60px;
+  }
 
-    .church-photo q .quote-highlight {
-        margin: 0px -10px;
-    }
-    
-    .church-photo .reference-verse {
-        font-size: 15px;
-    }
+  .church-photo q .quote-highlight {
+    margin: 0px -10px;
+  }
 
-    .confession-button-and-img img {
-        width:300px;
-    }
+  .church-photo .reference-verse {
+    font-size: 15px;
+  }
 
-    #confession .image img {
-        width: 210px;
-    }
+  .confession-button-and-img img {
+    width: 300px;
+  }
 
-    #confession .tulip img {
-        width: 150px;
-    }
+  #confession .image img {
+    width: 210px;
+  }
 
-    .project-cards {
-        flex-direction: column;
-        margin: auto;
-        width: 100%;
-    }
+  #confession .tulip img {
+    width: 150px;
+  }
 
-    .project-cards>div {
-        margin-top: 15px;
-        width: calc(100% - 30px);
-    }
+  .project-cards {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
 
-    footer .logo {
-        transform: translate(0,0);
-    }
+  .project-cards div {
+    margin-top: 15px;
+    width: calc(100% - 30px);
+  }
 
-    footer section {
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
+  footer .logo {
+    transform: translate(0, 0);
+  }
+
+  footer section {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 424px) {
-    .church-photo-container p {
-        font-size: 20px;
-    }
+  .church-photo-container p {
+    font-size: 20px;
+  }
 
-    .church-photo q {
-        font-size: 25px;
-        line-height: 35px;
-    }
+  .church-photo q {
+    font-size: 25px;
+    line-height: 35px;
+  }
 
-    .church-photo {
-        height: 700px
-    }
+  .church-photo {
+    height: 700px;
+  }
 
-    .church-photo q .quote-highlight {
-        margin: 0px -5px;
-    }
-    
-    .church-photo .reference-verse {
-        font-size: 15px;
-    }
+  .church-photo q .quote-highlight {
+    margin: 0px -5px;
+  }
 
-    nav,
-    section {
-        width: calc(100% - 30px);
-    }
+  .church-photo .reference-verse {
+    font-size: 15px;
+  }
 
-    .confession-button-and-img {
-        flex-direction: column;
-    }
+  nav,
+  section {
+    width: calc(100% - 30px);
+  }
 
-    .confession-button-and-img img {
-        width:200px;
-    }
+  .confession-button-and-img {
+    flex-direction: column;
+  }
 
-    #confession .p-1 {
-        font-size: 20px;
-    }
+  .confession-button-and-img img {
+    width: 200px;
+  }
 
-    #confession .image img {
-        width: 150px;
-    }
+  #confession .p-1 {
+    font-size: 20px;
+  }
 
-    #confession .tulip img {
-        width: 100px;
-    }
+  #confession .image img {
+    width: 150px;
+  }
 
-    .yt-text-and-img {
-        flex-direction: column;
-        margin-top: 40px;
-    }
+  #confession .tulip img {
+    width: 100px;
+  }
 
-    .yt-text-and-img p {
-        max-width: 100%;
-    }
+  .yt-text-and-img {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .yt-text-and-img p {
+    max-width: 100%;
+  }
 }
-
