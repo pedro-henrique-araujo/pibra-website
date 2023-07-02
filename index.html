@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/272690feaf.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,13 +17,16 @@
     <title>Primeira Igreja Batista de Aquiraz</title>
   </head>
 
-  <body onload=" getVideos() ">
+  <body onload="getVideos()">
     <aside class="menu">
       <nav>
         <div class="menu-btn">
-          <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+          <img
+            src="./assets/img/menu-icon.svg"
+            alt="botão menu"
+            onclick="menuShow()"
+          />
         </div>
-
         <div>
           <img
             src="./assets/img/logo.svg"
@@ -33,7 +36,11 @@
         </div>
         <ul>
           <div class="close-menu">
-            <i class="fa-solid fa-chevron-left" onclick="menuShow()"></i>
+            <img
+              src="./assets/img/chevron-left.svg"
+              alt="botão fechar"
+              onclick="menuShow()"
+            />
           </div>
           <li onclick="menuShow()">
             <img
@@ -42,9 +49,8 @@
               alt="logo da igreja"
             />
           </li>
-          <li onclick="menuShow()" style="display:none">
+          <li onclick="menuShow()" style="display: none">
             <a href="#confession">Confissão de Fé</a>
-            <!-- <a href="#confession">de Fé</a> -->
           </li>
           <li onclick="menuShow()">
             <a href="#meetings">Cultos</a>
@@ -64,7 +70,6 @@
             <a href="https://itsemear.com" target="_blank"
               >Seminário Teológico</a
             >
-            <!-- <a href="https://itsemear.com" target="_blank">Teológico</a> -->
           </li>
           <li onclick="menuShow()">
             <a href="/pix.html">Contribuir</a>
@@ -238,6 +243,5 @@
     </footer>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/api-youtube.js"></script>
-
   </body>
 </html>
